@@ -25,8 +25,18 @@
         <!-- Input for number of paragraphs -->
         <div class="mb-4">
           <label for="numParagraphs">Paragraphs</label>
-          <span id="rangeValue">1</span>
-          <input type="range" id="numParagraphs" min="1" max="99" value="1" />
+          <span id="rangeValue" class="ms-2">1</span>
+
+          <div class="d-flex align-items-center">
+            <input
+              type="range"
+              id="numParagraphs"
+              class="w-100"
+              min="1"
+              max="99"
+              value="1"
+            />
+          </div>
 
           <div>
             <input type="checkbox" id="startWith" name="startWith" />
@@ -38,7 +48,7 @@
           </button>
           <!-- <button type="button" class="btn btn-success" id="copyButton">
           Copy Text
-        </button> -->
+          </button> -->
         </div>
         <p>
           Whether you're a developer, a designer, or just a puppy enthusiast,

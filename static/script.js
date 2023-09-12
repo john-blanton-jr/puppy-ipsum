@@ -59,3 +59,23 @@ document.addEventListener('DOMContentLoaded', function() {
     }
   }
 });
+
+
+document.addEventListener('DOMContentLoaded', (event) => {
+  const numParagraphsElement = document.getElementById('numParagraphs');
+  if (numParagraphsElement) {
+      numParagraphsElement.value = '1';
+  }
+});
+
+
+window.onload = function() {
+  const numParagraphsElement = document.getElementById('numParagraphs');
+  const rangeValueElement = document.getElementById('rangeValue');
+
+  if (numParagraphsElement && rangeValueElement) {
+      numParagraphsElement.value = 1;
+      rangeValueElement.textContent = '1';
+  }
+};
+
