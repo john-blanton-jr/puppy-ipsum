@@ -1,0 +1,19 @@
+{
+    "nouns": [
+        "Labrador Retriever", "German Shepherd", "Golden Retriever", "Bulldog", "Beagle", 
+        "Poodle", "Rottweiler", "Yorkshire Terrier", "Boxer", "Dachshund", 
+        "Siberian Husky", "Great Dane", "Doberman Pinscher", "Cavalier King Charles Spaniel", "Shih Tzu", 
+        "Boston Terrier", "Pug", "Havanese", "Mastiff", "Cocker Spaniel", 
+        "French Bulldog", "Maltese", "Pomeranian", "Chow Chow", "Samoyed", 
+        "Saint Bernard", "Newfoundland", "Border Collie", "Bichon Frise", "Akita", 
+        "Alaskan Malamute", "Australian Shepherd", "Bloodhound", "Bull Terrier", "Collie", 
+        "Dalmatian", "English Setter", "Fox Terrier", "Greyhound", "Harrier", 
+        "Irish Wolfhound", "Jack Russell Terrier", "Keeshond", "Lhasa Apso", "Malamute", 
+        "Norwegian Elkhound", "Old English Sheepdog", "Papillon", "Pointer", "Rhodesian Ridgeback", 
+        "Shar Pei", "Tibetan Mastiff", "Vizsla", "Weimaraner", "Xoloitzcuintli", 
+        "Yorkipoo", "Zuchon"
+    ],
+    "verbs": ["runs", "jumps", "barks", "sniffs", "wags", "plays", "fetches", "rolls", "digs", "howls"],
+    "adjectives": ["happy", "playful", "energetic", "fluffy", "loyal", "friendly", "curious", "adorable", "intelligent", "brave"],
+    "conjunctions": ["and", "or", "but", "yet", "so", "nor", "although", "because", "while", "whereas"]
+}

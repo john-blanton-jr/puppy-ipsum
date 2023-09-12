@@ -1,4 +1,5 @@
 # Puppy Ipsum
+ <img id="puppyImage" alt="Random Puppy Image" />
 
 
 
