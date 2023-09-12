@@ -2,13 +2,17 @@ import os
 from flask import Flask, render_template, jsonify, request
 from utils.generator import generate_paragraph
 
-
 app = Flask(__name__)
 
 
 @app.route("/")
 def home():
     return render_template("index.html")
+
+
+@app.route("/display_text")
+def display_text():
+    return render_template("display.html")
 
 
 @app.route("/generate_ipsum")

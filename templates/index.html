@@ -13,23 +13,162 @@
     <title>Puppy Ipsum</title>
   </head>
   <body>
-    <div class="">
-      <h1 class="">Welcome to Puppy Ipsum</h1>
-      <h1>Hello world!</h1>
-      <!-- Input for number of paragraphs -->
-      <label for="numParagraphs">Paragraphs</label>
-      <span id="rangeValue">1</span>
-      <input type="range" id="numParagraphs" min="1" max="99" value="1" />
+    <div class="container">
+      <div class="jumbotron">
+        <h1 class="display-4">Welcome to Puppy Ipsum! 🐾</h1>
+        <p class="lead">
+          Are you tired of the same old boring Lorem Ipsum placeholder text? Say
+          hello to Puppy Ipsum, your new favorite source for adorable,
+          puppy-themed placeholder text!
+        </p>
+        <hr class="my-4" />
+        <!-- Input for number of paragraphs -->
+        <div class="mb-4">
+          <label for="numParagraphs">Paragraphs</label>
+          <span id="rangeValue">1</span>
+          <input type="range" id="numParagraphs" min="1" max="99" value="1" />
 
-      <div>
-        <input type="checkbox" id="startWith" name="startWith" />
-        <label for="startWith">Start with "Puppy Ipsum"</label>
+          <div>
+            <input type="checkbox" id="startWith" name="startWith" />
+            <label for="startWith">Start with "Puppy Ipsum"</label>
+          </div>
+
+          <button type="button" class="btn btn-primary" id="generateButton">
+            Generate Puppy Ipsum
+          </button>
+          <!-- <button type="button" class="btn btn-success" id="copyButton">
+          Copy Text
+        </button> -->
+        </div>
+        <p>
+          Whether you're a developer, a designer, or just a puppy enthusiast,
+          Puppy Ipsum is here to bring a wagging tail and a splash of cuteness
+          to your projects. Customize your placeholder text with a variety of
+          options, including the number of paragraphs and whether to start with
+          the phrase "Puppy Ipsum".
+        </p>
+        <h2>How to Use:</h2>
+        <ul>
+          <li>
+            <strong>Select the Number of Paragraphs:</strong> Use the slider to
+            choose how many paragraphs of puppy goodness you want.
+          </li>
+          <li>
+            <strong>Customize Your Text:</strong> Want your text to start with
+            "Puppy Ipsum"? Just check the box!
+          </li>
+          <li>
+            <strong>Generate Your Text:</strong> Click the "Generate Puppy
+            Ipsum" button to create your custom puppy-themed text.
+          </li>
+          <li>
+            <strong>Copy Your Text:</strong> Once generated, click the "Copy
+            Text" button to copy your puppy ipsum to your clipboard, ready to be
+            pasted wherever you need some puppy love.
+          </li>
+        </ul>
+        <p class="lead">
+          So why wait? Unleash the puppies in your project and make your text
+          placeholders more adorable than ever!
+        </p>
       </div>
+      <hr class="my-4" />
+      <div class="container">
+        <h2 class="mb-4">Frequently Asked Questions (FAQs) 🐶</h2>
 
-      <button id="generateButton">Generate Puppy Ipsum</button>
-      <button id="copyButton">Copy Text</button>
-      <p id="ipsumText"></p>
+        <div class="mb-3">
+          <p>
+            <strong
+              >Q: Is Puppy Ipsum scientifically proven to increase
+              happiness?</strong
+            >
+          </p>
+          <p class="lead">
+            A: While we don't have a team of scientists at our disposal, we
+            firmly believe that anything puppy-related has the potential to
+            increase happiness exponentially!
+          </p>
+        </div>
+
+        <div class="mb-3">
+          <p>
+            <strong
+              >Q: Can I use Puppy Ipsum for my serious corporate
+              presentation?</strong
+            >
+          </p>
+          <p class="lead">
+            A: Absolutely! Nothing says "I mean business" like a presentation
+            filled with paragraphs of puppy-themed text. It might even get you a
+            promotion (or at least a few smiles)!
+          </p>
+        </div>
+
+        <div class="mb-3">
+          <p>
+            <strong
+              >Q: Will using Puppy Ipsum attract more puppies into my
+              life?</strong
+            >
+          </p>
+          <p class="lead">
+            A: While we can't guarantee a sudden influx of puppies in your
+            vicinity, we firmly believe in the power of positive thinking. Think
+            puppies, attract puppies!
+          </p>
+        </div>
+
+        <div class="mb-3">
+          <p>
+            <strong
+              >Q: Is there a limit to how much Puppy Ipsum I can
+              generate?</strong
+            >
+          </p>
+          <p class="lead">
+            A: The sky's the limit! Or in this case, maybe the backyard fence?
+            Generate as much puppy love as you need to fill your projects with
+            furry joy.
+          </p>
+        </div>
+
+        <div class="mb-3">
+          <p>
+            <strong
+              >Q: Can I suggest new features or puppy-related content for Puppy
+              Ipsum?</strong
+            >
+          </p>
+          <p class="lead">
+            A: We're all ears (just like our puppy mascots)! Feel free to
+            bark... err, talk to us about any suggestions or features you'd like
+            to see.
+          </p>
+        </div>
+
+        <div class="mb-3">
+          <p>
+            <strong
+              >Q: What do I do if I encounter a bug on the website?</strong
+            >
+          </p>
+          <p class="lead">
+            A: While our puppies are still learning how to code, we humans are
+            here to help! Report any bugs, and we'll fetch our technical team to
+            fix it right away.
+          </p>
+        </div>
+
+        <div class="mb-3">
+          <p><strong>Q: Is there a real puppy behind Puppy Ipsum?</strong></p>
+          <p class="lead">
+            A: In our hearts, there's a whole squad of puppies tirelessly
+            generating adorable Ipsum text for you, one wag at a time.
+          </p>
+        </div>
+      </div>
     </div>
+
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
