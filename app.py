@@ -1,6 +1,6 @@
-import os
 from flask import Flask, render_template, jsonify, request
 from utils.generator import generate_paragraph
+import requests
 
 app = Flask(__name__)
 
@@ -34,6 +34,19 @@ def generate_ipsum():
         generated_text = "\n\n".join(paragraphs)
 
         return jsonify(text=generated_text)
+    except Exception as e:
+        return jsonify(error=str(e)), 500
+
+
+@app.route("/get_puppy_image")
+def get_puppy_image():
+    try:
+        response = requests.get(
+            "https://api.pexels.com/v1/search?query=puppy&per_page=20",
+            headers={"Authorization": "YOUR_API_KEY_HERE"},
+        )
+        data = response.json()
+        return jsonify(data)
     except Exception as e:
         return jsonify(error=str(e)), 500
 
