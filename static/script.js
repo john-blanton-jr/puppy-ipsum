@@ -80,11 +80,7 @@ window.onload = function() {
 };
 
 function getPuppyImage() {
-  fetch('https://api.pexels.com/v1/search?query=puppy&per_page=80', {
-    headers: {
-      'Authorization': 'wOObFwswvxYAduX3YfbtEos62IVyhe8LFjxPUxNF0AqEJG14b8HqqK2I'
-    }
-  })
+  fetch('/get_puppy_image')
   .then(response => response.json())
   .then(data => {
     if(data && data.photos && data.photos.length > 0) {
@@ -111,3 +107,4 @@ function getPuppyImage() {
     console.error('Error fetching photo:', error);
   });
 }
+

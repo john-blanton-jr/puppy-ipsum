@@ -1,8 +1,14 @@
 from flask import Flask, render_template, jsonify, request
 from utils.generator import generate_paragraph
+from dotenv import load_dotenv
 import requests
+import os
 
 app = Flask(__name__)
+
+load_dotenv()
+
+api_key = os.environ.get("API_KEY")
 
 
 @app.route("/")
@@ -42,8 +48,8 @@ def generate_ipsum():
 def get_puppy_image():
     try:
         response = requests.get(
-            "https://api.pexels.com/v1/search?query=puppy&per_page=20",
-            headers={"Authorization": "YOUR_API_KEY_HERE"},
+            "https://api.pexels.com/v1/search?query=puppy&per_page=80",
+            headers={"Authorization": api_key},
         )
         data = response.json()
         return jsonify(data)
