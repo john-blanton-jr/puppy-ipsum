@@ -38,7 +38,9 @@ jobs:
       - name: Setup SSH Key
         run: |
           eval $(ssh-agent -s)
-          echo "${{ secrets.DEPLOY_KEY }}" | ssh-add -
+          echo "${{ secrets.DEPLOY_KEY }}" | tr -d '\r' | ssh-add -
+        env:
+          DEPLOY_KEY: ${{ secrets.DEPLOY_KEY }}
 
       - name: Deploy to DreamHost
         run: |
