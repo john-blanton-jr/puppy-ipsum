@@ -1,5 +1,5 @@
 import unittest
-from ..utils.generator import generate_sentence, generate_paragraph
+from utils.generator import generate_sentence, generate_paragraph
 
 
 class TestGenerator(unittest.TestCase):
