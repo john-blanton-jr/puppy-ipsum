@@ -13,7 +13,7 @@
         "Shar Pei", "Tibetan Mastiff", "Vizsla", "Weimaraner", "Xoloitzcuintli", 
         "Yorkipoo", "Zuchon"
     ],
-    "verbs": ["runs", "jumps", "barks", "sniffs", "wags", "plays", "fetches", "rolls", "digs", "howls"],
+    "verbs": ["runs", "jumps", "pees", "barks", "sniffs", "wags", "plays", "fetches", "rolls", "digs", "howls"],
     "adjectives": ["happy", "playful", "energetic", "fluffy", "loyal", "friendly", "curious", "adorable", "intelligent", "brave"],
     "conjunctions": ["and", "or", "but", "yet", "so", "nor", "although", "because", "while", "whereas"]
 }
