@@ -30,6 +30,6 @@ jobs:
 
       - name: Deploy to DreamHost
         run: |
-          rsync -avz --delete ./ user@puppyipsum.com:~/puppyipsum.com/
+          rsync -avz --delete ./ dh_wzsc45@puppyipsum.com:~/puppyipsum.com/
         env:
           DEPLOY_KEY: ${{ secrets.DEPLOY_KEY }}

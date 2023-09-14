@@ -39,15 +39,7 @@ async function generateIpsum() {
       numParagraphsElement.value = '1';
       rangeValueElement.textContent = '1';
     }
-  } finally {
-    // Reset the range slider and the displayed value
-    const numParagraphsElement = document.getElementById("numParagraphs");
-    const rangeValueElement = document.getElementById("rangeValue");
-    if (numParagraphsElement && rangeValueElement) {
-      numParagraphsElement.value = '1';
-      rangeValueElement.textContent = '1';
-    }
-  }
+  } 
 }
 
 
@@ -59,18 +51,9 @@ async function copyText() {
   } catch (err) {
       console.error('Error copying text: ', err);
   }
-  const textToCopy = document.getElementById("ipsumText").innerText;
-  try {
-      await navigator.clipboard.writeText(textToCopy);
-      console.log('Text copied to clipboard');
-  } catch (err) {
-      console.error('Error copying text: ', err);
-  }
 }
 
 function updateValue() {
-  document.getElementById("rangeValue").textContent =
-    document.getElementById("numParagraphs").value;
   document.getElementById("rangeValue").textContent =
     document.getElementById("numParagraphs").value;
 }
