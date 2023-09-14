@@ -25,8 +25,8 @@ jobs:
 
       - name: Run tests
         run: |
-          python -m test_generator.py
-          python -m test_data_loader.py
+          python -m tests/test_generator.py
+          python -m tests/test_data_loader.py
 
       - name: Deploy to DreamHost
         run: |
