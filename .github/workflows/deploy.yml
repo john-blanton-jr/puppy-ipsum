@@ -17,6 +17,8 @@ jobs:
         uses: actions/setup-python@v2
         with:
           python-version: 3.8
+      - name: List files in current directory
+        run: ls -l
 
       - name: Install dependencies
         run: |
