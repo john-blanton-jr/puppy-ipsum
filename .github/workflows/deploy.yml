@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - main
+
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -27,12 +28,15 @@ jobs:
 
       - name: Run tests
         run: |
-          python -m unittest discover -s tests
+          python -m unittest discover tests
 
-      - name: Add SSH key to known hosts and Deploy to DreamHost
+      - name: Add SSH key to known hosts
         run: |
           mkdir -p ~/.ssh
           echo "173.236.223.246 ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQC6uexCNBsSir9rPXbmMvEYRvqZ8bgiay24gtO/I3wKTtIui9YtW49l/dp3xNai7bkcujgo4G8aDm2USDbn2pH26CTbMBNdaYM6+aAZoc51k/PRibnzev0taGxD4czmat5xkfECix49EuAQOVXAjNB3FEO29dLHjkp0TrTenYv6oN3LoAn4RE+JE2LPr/X5R1daGRWCONCZl4xpo2TxwEHW00uGMFxdRi7K/8O/goIBSKXm0MyAraaArK8zRX9lBIyfANQRI04rViv5qis3P9eEzotJpG9xDKxgkWQIhPzLx8A5lhTS3EReOxevwSWBWuHk8uPIRYNK1623QwpDfqIhjAHgv9Lm38lBIcFBtntbW3xAyeqr387s9LvrMyC/ZL3z9e+uG/wnYsSnv05xAObQMR9MM5Prkgbeit28n82xVz4ARd3mH4Bm8vSDUXgfBOW/GSRiX4TYkzSXbZ6pI7JFkDEsqwKJONL4oRN/pWWJYFd3nLySnQ/Ealc9tgl7c4c=" >> ~/.ssh/known_hosts
+
+      - name: Deploy to DreamHost
+        run: |
           rsync -avz --delete ./ dh_wzsc45@puppyipsum.com:~/puppyipsum.com/
         env:
           DEPLOY_KEY: ${{ secrets.DEPLOY_KEY }}
