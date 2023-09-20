@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', (event) => {
   let generateButton = document.querySelector('.btn-primary');
-  let copyButton = document.querySelector('.btn-success'); // Changed from .btn-secondary to .btn-success to match the button class in your HTML
+  let copyButton = document.querySelector('.btn-success'); 
   let numParagraphs = document.getElementById("numParagraphs");
 
   if(generateButton) {
@@ -24,15 +24,12 @@ async function generateIpsum() {
     const response = await fetch(`/generate_ipsum?numParagraphs=${numParagraphs}&startWith=${startWith}`);
     const data = await response.json();
 
-    // Save the generated text to localStorage
     localStorage.setItem('generatedText', data.text);
 
-    // Navigate to the new page
     window.location.href = '/display_text';
   } catch (err) {
     console.error('Error generating ipsum: ', err);
   } finally {
-    // Reset the range slider and the displayed value
     const numParagraphsElement = document.getElementById("numParagraphs");
     const rangeValueElement = document.getElementById("rangeValue");
     if (numParagraphsElement && rangeValueElement) {

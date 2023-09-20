@@ -24,17 +24,13 @@ def display_text():
 @app.route("/generate_ipsum")
 def generate_ipsum():
     try:
-        # Get the inputs from the query parameters
         num_paragraphs = int(request.args.get("numParagraphs", 1))
         start_with = request.args.get("startWith", "false").lower() == "true"
 
-        # Generate the specified number of paragraphs
         paragraphs = [generate_paragraph() for _ in range(num_paragraphs)]
 
-        # Join the paragraphs into a single string
         generated_text = "\n\n".join(paragraphs)
 
-        # Add "Puppy Ipsum" at the start of the first paragraph if selected
         if start_with:
             paragraphs[0] = "Puppy Ipsum " + paragraphs[0]
         generated_text = "\n\n".join(paragraphs)
