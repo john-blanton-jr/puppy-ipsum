@@ -108,3 +108,42 @@ Install Python, Flask
 1. Clone the repo
   ```sh
   git clone https://github.com/your_username/PuppyIpsum
+
+2. Install the necessary packages
+```sh
+pip install -r requirements.txt
+
+3. Run the application
+```sh
+flask run
+
+<!-- USAGE EXAMPLES -->
+Usage
+Feel free to use or adapt Puppy Ipsum in any way you'd like. Clone the repository and modify it according to your preferences.
+
+<!-- ROADMAP -->
+Roadmap
+Coming soon ...
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+<!-- CONTRIBUTING -->
+Contributing
+Coming soon ...
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+<!-- LICENSE -->
+License
+Distributed under the MIT License. See LICENSE.txt for more information.
+
+<!-- CONTACT -->
+Contact
+Your Name - your_email@example.com
+
+Project Link: https://github.com/your_username/PuppyIpsum
+
+<!-- ACKNOWLEDGMENTS -->
+Acknowledgments
+Markdown Badges
+Best-README-Template
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+```
