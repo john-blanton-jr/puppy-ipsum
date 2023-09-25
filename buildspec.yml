@@ -7,13 +7,19 @@ phases:
     commands:
       - echo "Installing dependencies..."
       - pip install -r requirements.txt
+      - echo "Dependencies installed."
   pre_build:
     commands:
       - echo "Pre-build phase..."
+      - echo "Listing current directory contents:"
+      - ls -al
   build:
     commands:
       - echo "Build started on $(date)"
       - echo "Zipping the application..."
       - zip -r puppy-ipsum.zip src/ templates/ application.py data/ static/ utils/ buildspec.yml package-lock.json package.json requirements.txt
+      - echo "Application zipped."
+      - echo "Listing current directory contents after build:"
+      - ls -al
 artifacts:
   files: puppy-ipsum.zip
