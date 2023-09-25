@@ -5,8 +5,6 @@ import traceback
 
 data, quotes = load_data()
 
-logging.basicConfig(level=logging.DEBUG)
-
 
 def generate_sentence() -> str:
     try:
