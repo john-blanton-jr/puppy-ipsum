@@ -14,6 +14,6 @@ phases:
     commands:
       - echo Build started on `date`
       - echo Zipping the application...
-      - zip -r my_app.zip .
+      - zip -r puppy-ipsum.zip .
 artifacts:
   files: puppy-ipsum.zip
