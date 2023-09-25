@@ -5,15 +5,15 @@ phases:
     runtime-versions:
       python: 3.11
     commands:
-      - echo Installing dependencies...
+      - echo "Installing dependencies..."
       - pip install -r requirements.txt
   pre_build:
     commands:
-      - echo Pre-build phase...
+      - echo "Pre-build phase..."
   build:
     commands:
-      - echo Build started on `date`
-      - echo Zipping the application...
-      - zip -r puppy-ipsum.zip .
+      - echo "Build started on $(date)"
+      - echo "Zipping the application..."
+      - zip -r puppy-ipsum.zip src/ templates/ application.py data/ static/ utils/ buildspec.yml packaage-lock.json package.json requiremants.txt
 artifacts:
   files: puppy-ipsum.zip
