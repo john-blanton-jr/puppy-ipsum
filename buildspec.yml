@@ -17,7 +17,7 @@ phases:
     commands:
       - echo "Build started on $(date)"
       - echo "Zipping the application..."
-      - zip -r puppy-ipsum.zip src/ templates/ application.py data/ static/ utils/ buildspec.yml package-lock.json package.json requirements.txt .
+      - zip -r puppy-ipsum.zip src/ templates/ application.py data/ static/ utils/ buildspec.yml package-lock.json package.json requirements.txt 
       - echo "Application zipped."
       - echo "Listing current directory contents after build:"
       - ls -al

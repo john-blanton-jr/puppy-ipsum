@@ -136,6 +136,7 @@ License
 Distributed under the MIT License. See LICENSE.txt for more information.
 
 <!-- CONTACT -->
+
 Contact
 Your Name - your_email@example.com
 
