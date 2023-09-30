@@ -6,7 +6,7 @@
   <h1>Puppy Ipsum</h1>
   </a>
 
-  <h3 align="center">A Flask-Based Ipsum Text Generator</h3>
+  <h3 align="center">Ipsum Text Generator</h3>
 
 </div>
 
@@ -108,14 +108,17 @@ Install Python, Flask
 1. Clone the repo
   ```sh
   git clone https://github.com/your_username/PuppyIpsum
+```
 
 2. Install the necessary packages
 ```sh
 pip install -r requirements.txt
+```
 
 3. Run the application
 ```sh
 flask run
+```
 
 <!-- USAGE EXAMPLES -->
 Usage
@@ -138,9 +141,9 @@ Distributed under the MIT License. See LICENSE.txt for more information.
 <!-- CONTACT -->
 
 Contact
-Your Name - your_email@example.com
+Your Name - hello@johnblanton.com
 
-Project Link: https://github.com/your_username/PuppyIpsum
+Project Link: [https://github.com/your_username/PuppyIpsum](https://github.com/john-blanton-jr/puppy-ipsum)
 
 <!-- ACKNOWLEDGMENTS -->
 Acknowledgments
