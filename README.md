@@ -15,8 +15,8 @@ Puppy Ipsum is a delightful and user-friendly application that generates "Ipsum"
 
 ## Screenshots
 
-![App Screenshot](puppyipsum_screenshot_01.png)
-![App Screenshot](puppyipsum_screenshot_02.png)
+![App Screenshot](/images/puppyipsum_screenshot_01.png)
+![App Screenshot](/images/puppyipsum_screenshot_02.png)
 
 ## Development Process
 
