@@ -11,7 +11,8 @@ Puppy Ipsum is a delightful and user-friendly application that generates "Ipsum"
 
 - **Puppy Image Generation**: Cute puppy image provided by pexels.com API.
 
-images/puppy-ipsum-demo.webm
+![Demo Video](images/puppy-ipsum-demo.webm)
+
 
 ## Screenshots
 
